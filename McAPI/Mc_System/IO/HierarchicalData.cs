@@ -104,7 +104,7 @@ namespace McAPI.Mc_System.IO
             {
                 if (file.Extension == _FileExtension)
                 // С необходимым расширением, то создаем элемент Mc_Class и 
-                // записываем в его параметры необходимые данные (по аналогии с данными директории)
+                // записываем в его параметры необходимые данные (по аналогии с данными директории).
                 {
                     path = file.FullName.Replace(file.Extension, _ToolTipExtension);
                     if (File.Exists(path))
