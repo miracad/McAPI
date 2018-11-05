@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>McAPI</name>
+    </assembly>
+    <members>
+        <member name="M:McAPI.McElements.Room.BoundarySegmentsOffset(Autodesk.Revit.DB.Architecture.Room,System.Double)">
+            <summary>
+            Получаем список кривых и элементов контура помещения смещенных на расстояние в виде списка Mc_Class
+            </summary>
+            <param name="room">Помещение</param>
+            <param name="offset">Смещение в мм</param>
+            <returns>Возвращается список объектов Mc_Class</returns>
+        </member>
+        <member name="M:McAPI.McElements.Room.Create(Autodesk.Revit.DB.XYZ)">
+            <summary>
+            Создать помещение по указанной точке
+            </summary>
+            <param name="point"></param>
+            <returns></returns>
+        </member>
+        <member name="M:McAPI.McElements.Room.Create(Autodesk.Revit.DB.Level)">
+            <summary>
+            Создать помещения на указанном уровне
+            </summary>
+            <param name="level">Уровень, на котором необходимо создать помещения</param>
+            <returns></returns>
+        </member>
+        <member name="M:McAPI.McSystem.Drawing.Bitmap.GetPixelsToMcLstClass_ID_Name_RGB_A_ToArgb(System.String)">
+             <summary>
+             Возвращает список Mc_Class, с заполненным списком Mc_Lst - строка из пикселей
+             каждый объект Mc_Class содержит в свойстве 
+             Mc_Prop1 = цвет в виде строки (Color)111111
+             Mc_Prop_2 = Name;
+            Mc_Prop_3 = RGB (152;123;0)
+            Mc_Prop_4 = A (Alfa-channel)
+            Mc_Prop_5 = ToArgb (int)
+             </summary>
+             <param name="path_file">Укажите путь к файлу картинки</param>
+             <returns>List_Mc_Class</returns>
+        </member>
+        <member name="M:McAPI.McSystem.Drawing.Bitmap.GetPixelsToMcClass_Range_ID_Name_RGB_A_ToArgb(System.String)">
+             <summary>
+             Возвращает список Mc_Class, 
+             каждый объект Mc_Class содержит в свойстве 
+             Mc_Prop1 = Позиция цвета пикселя (12:15)
+             Mc_Prop2 = цвет в виде строки (Color)111111
+             Mc_Prop_3 = Name;
+            Mc_Prop_4 = RGB (152;123;0)
+            Mc_Prop_5 = A (Alfa-channel)
+            Mc_Prop_6 = ToArgb (int)
+             </summary>
+             <param name="path_file">Укажите путь к файлу картинки</param>
+             <returns>List_Mc_Class</returns>
+        </member>
+        <member name="M:McAPI.McSystem.Drawing.Bitmap.GetPixelsRangeToMcClass_Range_ID_Name_RGB_A_ToArgb(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Возвращает список Mc_Class в заданном диапазоне, указав начальное значение по x и y и указав кол-во, 
+            каждый объект Mc_Class содержит в свойстве 
+            Mc_Prop1 = Позиция цвета пикселя (12:15)
+            Mc_Prop2 = цвет в виде строки (Color)111111
+            Mc_Prop_3 = Name;
+            Mc_Prop_4 = RGB (152;123;0)
+            Mc_Prop_5 = A (Alfa-channel)
+            Mc_Prop_6 = ToArgb (int)
+            </summary>
+            <param name="path_file">Путь к файлу картинки</param>
+            <param name="x_start">Начальный диапозон считывания пикселей по X</param>
+            <param name="y_start">Начальный диапозон считывания пикселей по Y</param>
+            <param name="x_length">Конечный диапозон считывания пикселей по X</param>
+            <param name="y_length">Конечный диапозон считывания пикселей по Y</param>
+            <returns></returns>
+        </member>
+        <member name="T:McAPI.McSystem.IO.HierarchicalData">
+            <summary>
+            Получаем иерархические данные
+            </summary>
+        </member>
+        <member name="M:McAPI.McSystem.IO.HierarchicalData.DirectoryToMcClass(System.String,System.String,System.String,System.String)">
+            <summary>
+            Получим иерархическое дерево папок и файлов, с картинками и описанием.
+            </summary>
+            <param name="rootDir">Путь директории</param>
+            <param name="FileExtension">Искомое расширение у файлов</param>
+            <param name="ImageExtension">Искомое расширение картинки файлов</param>
+            <param name="ToolTipExtension">Искомое расширение для описания файлов</param>
+            <returns>Mc_Class</returns>
+        </member>
+    </members>
+</doc>
