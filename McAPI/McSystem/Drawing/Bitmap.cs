@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace McAPI.Mc_System.Drawing
+namespace McAPI.McSystem.Drawing
 {
     public class Bitmap
     {

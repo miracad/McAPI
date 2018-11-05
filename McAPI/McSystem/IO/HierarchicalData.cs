@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace McAPI.Mc_System.IO
+namespace McAPI.McSystem.IO
 {
     /// <summary>
     /// Получаем иерархические данные

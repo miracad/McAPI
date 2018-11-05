@@ -60,9 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Mc_Elements\Room.cs" />
-    <Compile Include="Mc_System\Drawing\Bitmap.cs" />
-    <Compile Include="Mc_System\IO\HierarchicalData.cs" />
+    <Compile Include="McElements\Room.cs" />
+    <Compile Include="McSystem\Drawing\Bitmap.cs" />
+    <Compile Include="McSystem\IO\HierarchicalData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
